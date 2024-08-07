@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://medium.com/media/6f73e0c2f5d430e7575d96a486dbce54 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>College Database Management – Medium</title><meta name="description" content="GitHub Gist: instantly share code, notes, and snippets."><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./4a88f5187860a7a10ee483a8bd0067cd.js.download" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-3575177cfe1a.css"><div id="gist114030863" class="gist">
+    <div class="gist-file" translate="no" data-color-mode="light" data-light-theme="light">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container">
+  <div id="file-college-database-management" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="" data-tagsearch-path="College Database Management">
+        <tbody><tr>
+          <td id="file-college-database-management-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-college-database-management-LC1" class="blob-code blob-code-inner js-file-line">CREATE TABLE student(</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-college-database-management-LC2" class="blob-code blob-code-inner js-file-line">     stu_id INT PRIMARY KEY,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-college-database-management-LC3" class="blob-code blob-code-inner js-file-line">     stu_name VARCHAR(30),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-college-database-management-LC4" class="blob-code blob-code-inner js-file-line">     stu_ph_no INT ,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-college-database-management-LC5" class="blob-code blob-code-inner js-file-line">     stu_email VARCHAR(30) ,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L6" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-college-database-management-LC6" class="blob-code blob-code-inner js-file-line">     stu_dob DATE </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L7" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-college-database-management-LC7" class="blob-code blob-code-inner js-file-line">     </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L8" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-college-database-management-LC8" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L9" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-college-database-management-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L10" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-college-database-management-LC10" class="blob-code blob-code-inner js-file-line">CREATE TABLE books (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L11" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-college-database-management-LC11" class="blob-code blob-code-inner js-file-line">     book_id INT PRIMARY KEY , </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L12" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-college-database-management-LC12" class="blob-code blob-code-inner js-file-line">     book_name VARCHAR(30),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L13" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="13"></td>
+          <td id="file-college-database-management-LC13" class="blob-code blob-code-inner js-file-line">     athr_name VARCHAR(30),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L14" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="14"></td>
+          <td id="file-college-database-management-LC14" class="blob-code blob-code-inner js-file-line">     book_brn_id INT,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L15" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="15"></td>
+          <td id="file-college-database-management-LC15" class="blob-code blob-code-inner js-file-line">     book_price INT</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L16" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="16"></td>
+          <td id="file-college-database-management-LC16" class="blob-code blob-code-inner js-file-line">     </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L17" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="17"></td>
+          <td id="file-college-database-management-LC17" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L18" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="18"></td>
+          <td id="file-college-database-management-LC18" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L19" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="19"></td>
+          <td id="file-college-database-management-LC19" class="blob-code blob-code-inner js-file-line">CREATE TABLE branch (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L20" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="20"></td>
+          <td id="file-college-database-management-LC20" class="blob-code blob-code-inner js-file-line">     brn_id INT PRIMARY KEY,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L21" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="21"></td>
+          <td id="file-college-database-management-LC21" class="blob-code blob-code-inner js-file-line">     brn_name VARCHAR(20),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L22" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="22"></td>
+          <td id="file-college-database-management-LC22" class="blob-code blob-code-inner js-file-line">     brn_ctg VARCHAR(20)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L23" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="23"></td>
+          <td id="file-college-database-management-LC23" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L24" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="24"></td>
+          <td id="file-college-database-management-LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L25" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="25"></td>
+          <td id="file-college-database-management-LC25" class="blob-code blob-code-inner js-file-line">CREATE TABLE user (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L26" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="26"></td>
+          <td id="file-college-database-management-LC26" class="blob-code blob-code-inner js-file-line">     usr_id INT PRIMARY KEY,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L27" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="27"></td>
+          <td id="file-college-database-management-LC27" class="blob-code blob-code-inner js-file-line">     usr_name VARCHAR(30),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L28" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="28"></td>
+          <td id="file-college-database-management-LC28" class="blob-code blob-code-inner js-file-line">     usr_ph_no INT,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L29" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="29"></td>
+          <td id="file-college-database-management-LC29" class="blob-code blob-code-inner js-file-line">     usr_email VARCHAR(30)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L30" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="30"></td>
+          <td id="file-college-database-management-LC30" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L31" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="31"></td>
+          <td id="file-college-database-management-LC31" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L32" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="32"></td>
+          <td id="file-college-database-management-LC32" class="blob-code blob-code-inner js-file-line">CREATE TABLE issues (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L33" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="33"></td>
+          <td id="file-college-database-management-LC33" class="blob-code blob-code-inner js-file-line">     isu_id  INT UNIQUE,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L34" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="34"></td>
+          <td id="file-college-database-management-LC34" class="blob-code blob-code-inner js-file-line">     isu_date DATE , </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L35" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="35"></td>
+          <td id="file-college-database-management-LC35" class="blob-code blob-code-inner js-file-line">     isu_book_id INT ,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L36" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="36"></td>
+          <td id="file-college-database-management-LC36" class="blob-code blob-code-inner js-file-line">     isu_stu_id INT </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L37" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="37"></td>
+          <td id="file-college-database-management-LC37" class="blob-code blob-code-inner js-file-line">     </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L38" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="38"></td>
+          <td id="file-college-database-management-LC38" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L39" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="39"></td>
+          <td id="file-college-database-management-LC39" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L40" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="40"></td>
+          <td id="file-college-database-management-LC40" class="blob-code blob-code-inner js-file-line">CREATE TABLE login (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L41" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="41"></td>
+          <td id="file-college-database-management-LC41" class="blob-code blob-code-inner js-file-line">     lgn_id INT UNIQUE NOT NULL, </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L42" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="42"></td>
+          <td id="file-college-database-management-LC42" class="blob-code blob-code-inner js-file-line">     lgn_usr_id INT,</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L43" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="43"></td>
+          <td id="file-college-database-management-LC43" class="blob-code blob-code-inner js-file-line">     lgn_usr_name VARCHAR(20),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L44" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="44"></td>
+          <td id="file-college-database-management-LC44" class="blob-code blob-code-inner js-file-line">     lgn_pass VARCHAR(18),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L45" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="45"></td>
+          <td id="file-college-database-management-LC45" class="blob-code blob-code-inner js-file-line">     lgn_role_id INT </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L46" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="46"></td>
+          <td id="file-college-database-management-LC46" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L47" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="47"></td>
+          <td id="file-college-database-management-LC47" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L48" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="48"></td>
+          <td id="file-college-database-management-LC48" class="blob-code blob-code-inner js-file-line">CREATE TABLE roles (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L49" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="49"></td>
+          <td id="file-college-database-management-LC49" class="blob-code blob-code-inner js-file-line">     rol_id INT PRIMARY KEY, </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L50" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="50"></td>
+          <td id="file-college-database-management-LC50" class="blob-code blob-code-inner js-file-line">     rol_name VARCHAR(15),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L51" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="51"></td>
+          <td id="file-college-database-management-LC51" class="blob-code blob-code-inner js-file-line">     rol_lvl VARCHAR(15)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L52" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="52"></td>
+          <td id="file-college-database-management-LC52" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L53" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="53"></td>
+          <td id="file-college-database-management-LC53" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L54" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="54"></td>
+          <td id="file-college-database-management-LC54" class="blob-code blob-code-inner js-file-line">CREATE TABLE permission (</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L55" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="55"></td>
+          <td id="file-college-database-management-LC55" class="blob-code blob-code-inner js-file-line">     pr_id INT UNIQUE NOT NULL, </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L56" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="56"></td>
+          <td id="file-college-database-management-LC56" class="blob-code blob-code-inner js-file-line">     pr_name VARCHAR(15),</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L57" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="57"></td>
+          <td id="file-college-database-management-LC57" class="blob-code blob-code-inner js-file-line">     pr_rol_id INT</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L58" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="58"></td>
+          <td id="file-college-database-management-LC58" class="blob-code blob-code-inner js-file-line">     </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L59" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="59"></td>
+          <td id="file-college-database-management-LC59" class="blob-code blob-code-inner js-file-line">);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L60" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="60"></td>
+          <td id="file-college-database-management-LC60" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L61" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="61"></td>
+          <td id="file-college-database-management-LC61" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L62" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="62"></td>
+          <td id="file-college-database-management-LC62" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L63" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="63"></td>
+          <td id="file-college-database-management-LC63" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L64" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="64"></td>
+          <td id="file-college-database-management-LC64" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L65" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="65"></td>
+          <td id="file-college-database-management-LC65" class="blob-code blob-code-inner js-file-line">ALTER TABLE issues</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L66" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="66"></td>
+          <td id="file-college-database-management-LC66" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY(isu_book_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L67" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="67"></td>
+          <td id="file-college-database-management-LC67" class="blob-code blob-code-inner js-file-line">REFERENCES books(book_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L68" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="68"></td>
+          <td id="file-college-database-management-LC68" class="blob-code blob-code-inner js-file-line">ON DELETE CASCADE;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L69" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="69"></td>
+          <td id="file-college-database-management-LC69" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L70" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="70"></td>
+          <td id="file-college-database-management-LC70" class="blob-code blob-code-inner js-file-line">ALTER TABLE issues</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L71" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="71"></td>
+          <td id="file-college-database-management-LC71" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY(isu_stu_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L72" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="72"></td>
+          <td id="file-college-database-management-LC72" class="blob-code blob-code-inner js-file-line">REFERENCES student(stu_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L73" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="73"></td>
+          <td id="file-college-database-management-LC73" class="blob-code blob-code-inner js-file-line">ON DELETE CASCADE;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L74" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="74"></td>
+          <td id="file-college-database-management-LC74" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L75" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="75"></td>
+          <td id="file-college-database-management-LC75" class="blob-code blob-code-inner js-file-line">ALTER TABLE permission</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L76" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="76"></td>
+          <td id="file-college-database-management-LC76" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY(pr_rol_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L77" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="77"></td>
+          <td id="file-college-database-management-LC77" class="blob-code blob-code-inner js-file-line">REFERENCES roles(rol_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L78" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="78"></td>
+          <td id="file-college-database-management-LC78" class="blob-code blob-code-inner js-file-line">ON DELETE CASCADE; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L79" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="79"></td>
+          <td id="file-college-database-management-LC79" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L80" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="80"></td>
+          <td id="file-college-database-management-LC80" class="blob-code blob-code-inner js-file-line">ALTER TABLE login</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L81" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="81"></td>
+          <td id="file-college-database-management-LC81" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY (lgn_role_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L82" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="82"></td>
+          <td id="file-college-database-management-LC82" class="blob-code blob-code-inner js-file-line">REFERENCES roles(rol_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L83" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="83"></td>
+          <td id="file-college-database-management-LC83" class="blob-code blob-code-inner js-file-line">ON DELETE SET NULL;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L84" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="84"></td>
+          <td id="file-college-database-management-LC84" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L85" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="85"></td>
+          <td id="file-college-database-management-LC85" class="blob-code blob-code-inner js-file-line">ALTER TABLE login </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L86" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="86"></td>
+          <td id="file-college-database-management-LC86" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY (lgn_usr_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L87" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="87"></td>
+          <td id="file-college-database-management-LC87" class="blob-code blob-code-inner js-file-line">REFERENCES user(usr_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L88" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="88"></td>
+          <td id="file-college-database-management-LC88" class="blob-code blob-code-inner js-file-line">ON DELETE CASCADE;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L89" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="89"></td>
+          <td id="file-college-database-management-LC89" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L90" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="90"></td>
+          <td id="file-college-database-management-LC90" class="blob-code blob-code-inner js-file-line">ALTER TABLE books </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L91" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="91"></td>
+          <td id="file-college-database-management-LC91" class="blob-code blob-code-inner js-file-line">ADD FOREIGN KEY (book_brn_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L92" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="92"></td>
+          <td id="file-college-database-management-LC92" class="blob-code blob-code-inner js-file-line">REFERENCES branch(brn_id)</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L93" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="93"></td>
+          <td id="file-college-database-management-LC93" class="blob-code blob-code-inner js-file-line">ON DELETE SET NULL; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L94" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="94"></td>
+          <td id="file-college-database-management-LC94" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L95" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="95"></td>
+          <td id="file-college-database-management-LC95" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L96" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="96"></td>
+          <td id="file-college-database-management-LC96" class="blob-code blob-code-inner js-file-line">-- Inserting values</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L97" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="97"></td>
+          <td id="file-college-database-management-LC97" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L98" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="98"></td>
+          <td id="file-college-database-management-LC98" class="blob-code blob-code-inner js-file-line">-- user table values </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L99" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="99"></td>
+          <td id="file-college-database-management-LC99" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(101,'Jaden Clark',4836792,'Jaden342@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L100" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="100"></td>
+          <td id="file-college-database-management-LC100" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(102,'Olive Yew',6385647,'olivia7758l@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L101" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="101"></td>
+          <td id="file-college-database-management-LC101" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(103,'Peg Legge',9364753,'peghary45@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L102" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="102"></td>
+          <td id="file-college-database-management-LC102" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(104,'Anne Ortha',9361735,'anneA783@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L103" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="103"></td>
+          <td id="file-college-database-management-LC103" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(105,'Ruby Bartlett',9163728,'yiktLaura78@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L104" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="104"></td>
+          <td id="file-college-database-management-LC104" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(106,'May Day',3548679,'Davis889@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L105" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="105"></td>
+          <td id="file-college-database-management-LC105" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(107,'Tiffany Case',7548124,'Tiffanycase34@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L106" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="106"></td>
+          <td id="file-college-database-management-LC106" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(108,'Vilma Jarvi',8574963,'mygmailVimla@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L107" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="107"></td>
+          <td id="file-college-database-management-LC107" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(109,'Regan Rosen',3748254,'Rosenthybe54@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L108" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="108"></td>
+          <td id="file-college-database-management-LC108" class="blob-code blob-code-inner js-file-line">INSERT INTO user VALUES(110,'Laura Charling',8354610,'Laura6835CH@gmail.com');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L109" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="109"></td>
+          <td id="file-college-database-management-LC109" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L110" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="110"></td>
+          <td id="file-college-database-management-LC110" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L111" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="111"></td>
+          <td id="file-college-database-management-LC111" class="blob-code blob-code-inner js-file-line">-- branch table values  </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L112" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="112"></td>
+          <td id="file-college-database-management-LC112" class="blob-code blob-code-inner js-file-line">INSERT INTO branch VALUES(1001,'Heisengton','Science');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L113" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="113"></td>
+          <td id="file-college-database-management-LC113" class="blob-code blob-code-inner js-file-line">INSERT INTO branch VALUES(1002,'JumbleNumbers','Mathematics');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L114" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="114"></td>
+          <td id="file-college-database-management-LC114" class="blob-code blob-code-inner js-file-line">INSERT INTO branch VALUES(1003,'HelloWorld','IT');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L115" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="115"></td>
+          <td id="file-college-database-management-LC115" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L116" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="116"></td>
+          <td id="file-college-database-management-LC116" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L117" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="117"></td>
+          <td id="file-college-database-management-LC117" class="blob-code blob-code-inner js-file-line">-- roles table values</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L118" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="118"></td>
+          <td id="file-college-database-management-LC118" class="blob-code blob-code-inner js-file-line">INSERT INTO roles VALUES(10101,'DB_Admin',4);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L119" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="119"></td>
+          <td id="file-college-database-management-LC119" class="blob-code blob-code-inner js-file-line">INSERT INTO roles VALUES(10102,'Teacher',3);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L120" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="120"></td>
+          <td id="file-college-database-management-LC120" class="blob-code blob-code-inner js-file-line">INSERT INTO roles VALUES(10103,'Guest',2);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L121" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="121"></td>
+          <td id="file-college-database-management-LC121" class="blob-code blob-code-inner js-file-line">INSERT INTO roles VALUES(10104,'Viewer',1);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L122" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="122"></td>
+          <td id="file-college-database-management-LC122" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L123" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="123"></td>
+          <td id="file-college-database-management-LC123" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L124" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="124"></td>
+          <td id="file-college-database-management-LC124" class="blob-code blob-code-inner js-file-line">-- permission tables values</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L125" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="125"></td>
+          <td id="file-college-database-management-LC125" class="blob-code blob-code-inner js-file-line">INSERT INTO permission VALUES(151,'Total Control',NUll);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L126" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="126"></td>
+          <td id="file-college-database-management-LC126" class="blob-code blob-code-inner js-file-line">INSERT INTO permission VALUES(152,'Partial Control',NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L127" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="127"></td>
+          <td id="file-college-database-management-LC127" class="blob-code blob-code-inner js-file-line">INSERT INTO permission VALUES(153,'No Alterations',NULL); </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L128" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="128"></td>
+          <td id="file-college-database-management-LC128" class="blob-code blob-code-inner js-file-line">INSERT INTO permission VALUES(154,'Limited View',NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L129" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="129"></td>
+          <td id="file-college-database-management-LC129" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L130" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="130"></td>
+          <td id="file-college-database-management-LC130" class="blob-code blob-code-inner js-file-line">UPDATE permission SET pr_rol_id = 10101 where pr_id = 151;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L131" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="131"></td>
+          <td id="file-college-database-management-LC131" class="blob-code blob-code-inner js-file-line">UPDATE permission SET pr_rol_id = 10102 where pr_id = 152;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L132" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="132"></td>
+          <td id="file-college-database-management-LC132" class="blob-code blob-code-inner js-file-line">UPDATE permission SET pr_rol_id = 10103 where pr_id = 153;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L133" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="133"></td>
+          <td id="file-college-database-management-LC133" class="blob-code blob-code-inner js-file-line">UPDATE permission SET pr_rol_id = 10104 where pr_id = 154;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L134" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="134"></td>
+          <td id="file-college-database-management-LC134" class="blob-code blob-code-inner js-file-line">UPDATE permission SET pr_rol_id = 10105 where pr_id = 155;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L135" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="135"></td>
+          <td id="file-college-database-management-LC135" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L136" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="136"></td>
+          <td id="file-college-database-management-LC136" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L137" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="137"></td>
+          <td id="file-college-database-management-LC137" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L138" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="138"></td>
+          <td id="file-college-database-management-LC138" class="blob-code blob-code-inner js-file-line">-- login tables values </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L139" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="139"></td>
+          <td id="file-college-database-management-LC139" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(711,NULL,'Jaden Clark',4836792,NULL); </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L140" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="140"></td>
+          <td id="file-college-database-management-LC140" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(712,NULL,'Olive Yew',6385647,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L141" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="141"></td>
+          <td id="file-college-database-management-LC141" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(713,NULL,'Peg Legge',9364753,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L142" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="142"></td>
+          <td id="file-college-database-management-LC142" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(714,NULL,'Anne Ortha',9361735,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L143" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="143"></td>
+          <td id="file-college-database-management-LC143" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(715,NULL,'Ruby Bartlett',9163728,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L144" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="144"></td>
+          <td id="file-college-database-management-LC144" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(716,NULL,'May Day',3548679,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L145" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="145"></td>
+          <td id="file-college-database-management-LC145" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(717,NULL,'Tiffany Case',7548124,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L146" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="146"></td>
+          <td id="file-college-database-management-LC146" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(718,NULL,'Vilma Jarvi',8574963,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L147" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="147"></td>
+          <td id="file-college-database-management-LC147" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(719,NULL,'Regan Rosen',3748254,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L148" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="148"></td>
+          <td id="file-college-database-management-LC148" class="blob-code blob-code-inner js-file-line">INSERT INTO login VALUES(720,NULL,'Laura Charling',8354610,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L149" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="149"></td>
+          <td id="file-college-database-management-LC149" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L150" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="150"></td>
+          <td id="file-college-database-management-LC150" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L151" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="151"></td>
+          <td id="file-college-database-management-LC151" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 101 where lgn_id = 711;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L152" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="152"></td>
+          <td id="file-college-database-management-LC152" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 102 where lgn_id = 712;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L153" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="153"></td>
+          <td id="file-college-database-management-LC153" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 103 where lgn_id = 713;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L154" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="154"></td>
+          <td id="file-college-database-management-LC154" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 104 where lgn_id = 714;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L155" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="155"></td>
+          <td id="file-college-database-management-LC155" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 105 where lgn_id = 715;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L156" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="156"></td>
+          <td id="file-college-database-management-LC156" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 106 where lgn_id = 716;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L157" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="157"></td>
+          <td id="file-college-database-management-LC157" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 107 where lgn_id = 717;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L158" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="158"></td>
+          <td id="file-college-database-management-LC158" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 108 where lgn_id = 718;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L159" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="159"></td>
+          <td id="file-college-database-management-LC159" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 109 where lgn_id = 719;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L160" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="160"></td>
+          <td id="file-college-database-management-LC160" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_usr_id = 110 where lgn_id = 720;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L161" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="161"></td>
+          <td id="file-college-database-management-LC161" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L162" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="162"></td>
+          <td id="file-college-database-management-LC162" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10101 WHERE lgn_id = 712;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L163" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="163"></td>
+          <td id="file-college-database-management-LC163" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10102 WHERE lgn_id = 717; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L164" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="164"></td>
+          <td id="file-college-database-management-LC164" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10103 WHERE lgn_id = 718; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L165" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="165"></td>
+          <td id="file-college-database-management-LC165" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10103 WHERE lgn_id = 714; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L166" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="166"></td>
+          <td id="file-college-database-management-LC166" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10102 WHERE lgn_id = 713; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L167" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="167"></td>
+          <td id="file-college-database-management-LC167" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10103 WHERE lgn_id = 716; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L168" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="168"></td>
+          <td id="file-college-database-management-LC168" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10103 WHERE lgn_id = 719; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L169" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="169"></td>
+          <td id="file-college-database-management-LC169" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10103 WHERE lgn_id = 715; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L170" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="170"></td>
+          <td id="file-college-database-management-LC170" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10102 WHERE lgn_id = 711; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L171" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="171"></td>
+          <td id="file-college-database-management-LC171" class="blob-code blob-code-inner js-file-line">UPDATE login SET lgn_role_id = 10102 WHERE lgn_id = 720; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L172" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="172"></td>
+          <td id="file-college-database-management-LC172" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L173" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="173"></td>
+          <td id="file-college-database-management-LC173" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L174" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="174"></td>
+          <td id="file-college-database-management-LC174" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L175" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="175"></td>
+          <td id="file-college-database-management-LC175" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L176" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="176"></td>
+          <td id="file-college-database-management-LC176" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L177" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="177"></td>
+          <td id="file-college-database-management-LC177" class="blob-code blob-code-inner js-file-line">-- student table values </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L178" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="178"></td>
+          <td id="file-college-database-management-LC178" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L179" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="179"></td>
+          <td id="file-college-database-management-LC179" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(911,'Bennett Johns',7394658,'Bennetttt6748@gmail.com','1994-09-03');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L180" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="180"></td>
+          <td id="file-college-database-management-LC180" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(912,'Immanuel Collier',5936827,'collierIma674@gmail.com','1993-05-08');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L181" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="181"></td>
+          <td id="file-college-database-management-LC181" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(913,'Dayton Luettgen',9564836,'LueDay3841@gmail.com','1998-07-13');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L182" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="182"></td>
+          <td id="file-college-database-management-LC182" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(914,'Courtney Reinger',8375663,'Reignthe43@gmail.com','2000-05-07');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L183" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="183"></td>
+          <td id="file-college-database-management-LC183" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(915,'Retta Hammes',6492657,'RettaSamuela45@gmail.com','1998-02-03');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L184" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="184"></td>
+          <td id="file-college-database-management-LC184" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(916,'Monte Haley',08573543,'Monteray564@gmail.com','1999-07-21');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L185" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="185"></td>
+          <td id="file-college-database-management-LC185" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(917,'Ryann Franecki',01637429,'ryanben786654@gmail.com','2000-05-08');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L186" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="186"></td>
+          <td id="file-college-database-management-LC186" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(918,'Shayne Denesik',5471257,'uthSha4@gmail.com','2001-11-05');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L187" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="187"></td>
+          <td id="file-college-database-management-LC187" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(919,'Skylar Grady',9687452,'Skylaryou5t@gmail.com','1997-09-19');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L188" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="188"></td>
+          <td id="file-college-database-management-LC188" class="blob-code blob-code-inner js-file-line">INSERT INTO student VALUES(920,'Idell Franecki',7365841,'itsmeIdeLL4@gmail.com','1999-02-01');</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L189" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="189"></td>
+          <td id="file-college-database-management-LC189" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L190" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="190"></td>
+          <td id="file-college-database-management-LC190" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L191" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="191"></td>
+          <td id="file-college-database-management-LC191" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L192" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="192"></td>
+          <td id="file-college-database-management-LC192" class="blob-code blob-code-inner js-file-line">-- books table values </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L193" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="193"></td>
+          <td id="file-college-database-management-LC193" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L194" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="194"></td>
+          <td id="file-college-database-management-LC194" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(11,'Basics Of Science','George.c',NULL,455);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L195" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="195"></td>
+          <td id="file-college-database-management-LC195" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(12,'Basics Of Maths','Hadhway Rome',NULL,657);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L196" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="196"></td>
+          <td id="file-college-database-management-LC196" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(13,'Algebra 101','Katty Holmes',NULL,345);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L197" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="197"></td>
+          <td id="file-college-database-management-LC197" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(14,'Stars And Moons','Marty &amp; Josh',NULL,999);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L198" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="198"></td>
+          <td id="file-college-database-management-LC198" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(15,'C++ All In One','Jason.y',NULL,867);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L199" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="199"></td>
+          <td id="file-college-database-management-LC199" class="blob-code blob-code-inner js-file-line">INSERT INTO books VALUES(16,'Python For DS','Jose.Port',NULL,567);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L200" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="200"></td>
+          <td id="file-college-database-management-LC200" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L201" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="201"></td>
+          <td id="file-college-database-management-LC201" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1001 WHERE book_id = 11;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L202" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="202"></td>
+          <td id="file-college-database-management-LC202" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1001 WHERE book_id = 14;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L203" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="203"></td>
+          <td id="file-college-database-management-LC203" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1002 WHERE book_id = 12;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L204" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="204"></td>
+          <td id="file-college-database-management-LC204" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1002 WHERE book_id = 13;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L205" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="205"></td>
+          <td id="file-college-database-management-LC205" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1003 WHERE book_id = 15;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L206" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="206"></td>
+          <td id="file-college-database-management-LC206" class="blob-code blob-code-inner js-file-line">UPDATE books SET book_brn_id = 1003 WHERE book_id = 16;</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L207" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="207"></td>
+          <td id="file-college-database-management-LC207" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L208" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="208"></td>
+          <td id="file-college-database-management-LC208" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L209" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="209"></td>
+          <td id="file-college-database-management-LC209" class="blob-code blob-code-inner js-file-line">-- issues table values </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L210" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="210"></td>
+          <td id="file-college-database-management-LC210" class="blob-code blob-code-inner js-file-line">INSERT INTO issues VALUES(001,'2021-11-13',NULL,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L211" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="211"></td>
+          <td id="file-college-database-management-LC211" class="blob-code blob-code-inner js-file-line">INSERT INTO issues VALUES(002,'2021-12-04',NULL,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L212" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="212"></td>
+          <td id="file-college-database-management-LC212" class="blob-code blob-code-inner js-file-line">INSERT INTO issues VALUES(003,'2022-01-18',NULL,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L213" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="213"></td>
+          <td id="file-college-database-management-LC213" class="blob-code blob-code-inner js-file-line">INSERT INTO issues VALUES(004,'2022-01-2',NULL,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L214" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="214"></td>
+          <td id="file-college-database-management-LC214" class="blob-code blob-code-inner js-file-line">INSERT INTO issues VALUES(005,'2021-09-26',NULL,NULL);</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L215" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="215"></td>
+          <td id="file-college-database-management-LC215" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L216" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="216"></td>
+          <td id="file-college-database-management-LC216" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_book_id = 12 WHERE isu_id = 001; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L217" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="217"></td>
+          <td id="file-college-database-management-LC217" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_book_id = 16 WHERE isu_id = 002; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L218" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="218"></td>
+          <td id="file-college-database-management-LC218" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_book_id = 11 WHERE isu_id = 003; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L219" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="219"></td>
+          <td id="file-college-database-management-LC219" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_book_id = 15 WHERE isu_id = 004; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L220" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="220"></td>
+          <td id="file-college-database-management-LC220" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_book_id = 13 WHERE isu_id = 005; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L221" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="221"></td>
+          <td id="file-college-database-management-LC221" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L222" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="222"></td>
+          <td id="file-college-database-management-LC222" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_stu_id = 913 WHERE isu_id = 001; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L223" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="223"></td>
+          <td id="file-college-database-management-LC223" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_stu_id = 917 WHERE isu_id = 002; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L224" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="224"></td>
+          <td id="file-college-database-management-LC224" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_stu_id = 915 WHERE isu_id = 003; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L225" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="225"></td>
+          <td id="file-college-database-management-LC225" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_stu_id = 911 WHERE isu_id = 004; </td>
+        </tr>
+        <tr>
+          <td id="file-college-database-management-L226" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="226"></td>
+          <td id="file-college-database-management-LC226" class="blob-code blob-code-inner js-file-line">UPDATE issues SET isu_stu_id = 919 WHERE isu_id = 005; </td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Harsh-Bhise/4a88f5187860a7a10ee483a8bd0067cd/raw/1baabef1601def1a5e85abdd35d8c61f87a41c4a/College%20Database%20Management" style="float:right" class="Link--inTextBlock">view raw</a>
+        <a href="https://gist.github.com/Harsh-Bhise/4a88f5187860a7a10ee483a8bd0067cd#file-college-database-management" class="Link--inTextBlock">
+          College Database Management
+        </a>
+        hosted with ❤ by <a class="Link--inTextBlock" href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log('maybeResize error: ', error)}}maybeResize();</script><script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8af8f61078993b09&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfL4&quot;:true}},&quot;version&quot;:&quot;2024.7.0&quot;,&quot;token&quot;:&quot;0b5f665943484354a59c39c6833f7078&quot;}" crossorigin="anonymous"></script>
+</body></html>
